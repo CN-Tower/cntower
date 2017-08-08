@@ -1,0 +1,56 @@
+#nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: auto;
+  height: 55px;
+  z-index: 1000;
+  padding-top: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+#nav div.wp {
+  width: 1210px;
+  margin: 0 auto;
+  height: 100%;
+}
+#nav div.wp .logo {
+  position: relative;
+  width: 225px;
+  height: 37px;
+}
+#nav div.wp .logo img {
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+#nav div.wp div.nav-list {
+  overflow: hidden;
+  width: 828px;
+  float: right;
+  margin-top: 16px;
+}
+#nav div.wp div.nav-list ul {
+  width: 100%;
+  height: 100%;
+}
+#nav div.wp div.nav-list ul li {
+  position: relative;
+  float: left;
+  font-size: 16px;
+  margin-left: 70px;
+}
+#nav div.wp div.nav-list ul li a {
+  float: left;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  height: 24px;
+}
+#nav div.wp div.nav-list ul li a:hover {
+  color: #2392e8 !important;
+}
+#nav div.wp div.nav-list ul li a.active {
+  color: #2392e8 !important;
+}

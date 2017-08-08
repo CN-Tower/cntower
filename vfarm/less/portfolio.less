@@ -1,0 +1,268 @@
+
+
+//portfolio  全局样式
+.portfolio {
+  background: url("../images/sky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  padding: 80px 0;
+
+  .our {
+    font-family: 'Poiret One', cursive;
+    color: #C3DFFB;
+    margin-bottom: 50px;
+  }
+
+  //图片的样式
+  .portfolio-item {
+    margin-bottom: 30px;
+    //鼠标移入样式
+    .caption {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: rgba(24, 188, 156, .9);
+      //图标样式
+      .caption-content {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        margin-top: -20px;
+        width: 100%;
+        height: 20px;
+        color: white;
+        font-size: 42px;
+      }
+    }
+    //鼠标移入显示图标
+    .caption:hover {
+      opacity: 1;
+    }
+
+    .portfolio-link {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+  }
+
+  .img-responsive {
+    display: block;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  //动画
+  .animation {
+    animation: top 2s;
+  }
+  .animation1 {
+    animation: top 2s .5s;
+  }
+  .animation2 {
+    animation: top 2s 1s;
+  }
+  @keyframes top {
+    0% {
+      transform: translate(0, 100px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+}
+
+//弹出框
+.pop-up {
+  overflow: auto;
+  position: relative;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  color: white;
+}
+//X 关闭
+.close-modal {
+  position: absolute;
+  top: 50px;
+  right: 5%;
+  font-size: 50px;
+  color: white;
+}
+
+.close-modal i:hover {
+  cursor: pointer;
+  color: coral;
+}
+
+//当界面宽度小于912时，X隐藏
+@media all and (max-width: 912px) {
+  .close-modal {
+    opacity: 0;
+  }
+}
+
+
+
+//x end
+.pop-up h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.pop-up p {
+  margin: 20px auto;
+  font-size: 14px;
+}
+
+.pop-up button {
+  margin-top: 20px;
+  i {
+    margin-right: 5px;
+  }
+}
+
+//弹出框 End
+
+//Our-Blog
+.Our-Blog {
+  background: url("../images/blur.jpg") no-repeat;
+  position: relative;
+  background-position: center;
+  background-size: 100% 100%;
+  border-top: 1px solid #9DA9B5;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  padding: 80px 0;
+  h1 {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 42px;
+  }
+
+  .max-w{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .blog {
+    border: 3px solid white;
+    background: white;
+    position: relative;
+
+    img {
+      width: 100%;
+      transition: all .5s;
+    }
+  }
+  //隐藏的部分
+  .div-hide {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3c763d;
+    text-align: center;
+    border-top: 1px solid #3c763d;
+    h5 {
+      font-size: 17px;
+      padding: 10px;
+      margin-top: 40px;
+      background: black;
+      color: white;
+    }
+    p {
+      color: white;
+      padding: 10px 20px 20px;
+      font-size: 14px;
+    }
+    .h5 {
+      display: inline-block;
+      margin-top: 0px;
+      padding: 10px;
+      font-size: 17px;
+      background: black;
+      color: white;
+      width: 50%;
+    }
+    .h5:hover{
+      cursor: pointer;
+      color: #3c763d;
+    }
+  }
+
+  //鼠标移入动画
+  .animation:hover img {
+    transform: scale(0) rotate(720deg);
+  }
+  .animation:hover .div-hide {
+    transition: opacity 1s;
+    transition-delay: 0.5s;
+    opacity: 1;
+    .h5 {
+      animation: hide .5s .6s;
+    }
+    p {
+      animation: hide .5s .7s;
+    }
+    h5 {
+      animation: hide .5s .8s;
+    }
+  }
+  @keyframes hide {
+    0% {
+      transform: translate(0, -50px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  .p1 {
+    font-family: "宋体";
+    font-size: 15px;
+    text-align: left;
+    color: white;
+  }
+  .h1 {
+    font-size: 22px;
+    margin: 22px 0;
+    text-align: left;
+    height: 48px;
+  }
+  .h1:hover {
+    cursor: pointer;
+    font-weight: 600;
+    color: green;
+  }
+  .p2 {
+    color: white;
+    font-family: "宋体";
+    font-size: 16px;
+    text-align: left;
+  }
+  //渐入动画
+  //.Blog1{
+  //  animation: Blog 2s;
+  //}
+  .Blog2{
+    animation: Blog 2s .5s;
+  }
+  @keyframes Blog {
+    0%{
+      transform: translate(0,100px);
+    }
+    100%{
+      transform: translate(0);
+    }
+
+  }
+}
+
+
+
+

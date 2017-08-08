@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户中心</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../../components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- angularJS -->
+    <!--<script src="../../../components/angular/angular.min.js"></script>
+    <script src="../../../components/angular-route/angular-route.min.js"></script>
+    <script src="../../../components/angular-resource/angular-resource.min.js"></script>-->
+    <!-- custom -->
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/fix.css">
+    <link rel="stylesheet" href="../../../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/usercenter/home.css"/>
+    <script src="../../../js/base.js?_v=1471481979451"></script>
+    <script data-main="../../../js/index.js?_v=1471481979451"
+            src="../../../components/requirejs/require.js?_v=1471481979451"></script>
+    <script src="./home.js?_v=0" type="text/javascript" charset="utf-8"></script>
+</head>
+<body ng-controller="myCtrl">
+<div ng-include="'./templates/header.tpl.html'"></div>
+<div ng-view></div>
+<div ng-include="'./templates/footer.tpl.html'"></div>
+</body>
+</html>

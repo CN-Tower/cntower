@@ -1,0 +1,125 @@
+.cont{
+  width: 100%;
+
+  .smallBanner{
+    min-width: 1200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    .bannerImg{
+      height: 470px;
+      width: 100%;
+    }
+    .bannerText{
+      position: absolute;
+      left: 35%;
+      top:60%;
+      z-index:2;
+      color: #eeeeee;
+      font-size: 36px;
+    }
+
+  }
+  .tabs{
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+
+    .tabs-ico{
+      width: 1000px;
+      margin: 0 auto;
+
+      p{
+        display: inline-block;
+        padding: 40px 100px;
+        width: 120px;
+
+        text-align: center;
+        span{
+          display: block;
+          text-align: center;
+          margin-top: 10px;
+        }
+        img{
+          width: 50%;
+          height: 50%;
+
+
+        }
+      }
+    }
+  }
+
+  //logos部分
+  .logos{
+    min-width: 1200px;
+    .logos_one{
+
+      font-size: 0;
+      li{
+        perspective: 1000px;
+        display: inline-block;
+        width: 25%;
+        height: 25%;
+        box-sizing:border-box;
+        position: relative;
+        .rotate1{
+          transform: rotateY(0);
+          transition: all 0.5s ease-in-out 0s;
+          img{
+            vertical-align:top;
+            width: 100%;
+          }
+
+        }
+        &:hover .rotate1{
+          -webkit-transform:rotateY(-90deg);
+          -moz-transform: rotateY(-90deg);
+          -ms-transform: rotateY(-90deg);
+          -o-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+        }
+        .rotate2{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top:0;
+          //z-index: -1;
+          background: rgba(0,0,0,.7);
+          text-align: center;
+          -webkit-transform:rotateY(90deg) ;
+          -moz-transform: rotateY(90deg);
+          -ms-transform: rotateY(90deg);
+          -o-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+          transition: all 0.5s ease-in-out 0s;
+          img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top:0;
+          }
+
+        }
+        &:hover .rotate2{
+          -webkit-transform:rotateY(0deg) ;
+          -moz-transform: rotateY(0deg);
+          -ms-transform: rotateY(0deg);
+          -o-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+      }
+
+    }
+
+
+  }
+ .Customer{
+   position: fixed;
+   top:200px;
+   right: -100px;
+   transition: all 1s;
+ }
+}

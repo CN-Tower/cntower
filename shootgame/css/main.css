@@ -1,0 +1,162 @@
+*{/*Çå³ýËùÓÐµÄ±ß¾à*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1366px;
+    height: 100%;
+
+}
+#main{
+    width: 1366px;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/readyBg.jpg") no-repeat center bottom;
+}
+.style{/*×²»÷Ç°*/
+    -webkit-filter:brightness(1);
+    -webkit-transition: -webkit-filter 0.1s linear;
+}
+.hit{/*×²»÷ÉÁË¸*/
+    -webkit-filter:brightness(.5);
+    -webkit-transition: -webkit-filter 0.1s linear;
+}
+button{
+    position: absolute;
+    z-index: 20;
+    left: 500px;
+}
+#back{
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    opacity: 0.9;
+}
+#uiScore{
+    background-image: url("../images/ui/RunnerGame.gif");
+    width: 139px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+#score{
+    width: 80px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+    line-height: 28px;
+    font-family: Calibri,"Microsoft YaHei";
+}
+#hp0{
+    background-image: url("../images/ui/HP0.png");
+    width: 56px;
+    height: 7px;
+    position: absolute;
+    display: none;
+    z-index: 50;
+}
+#hpMax{
+    background-image: url("../images/ui/HPMAX.png");
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    -webkit-transition: all 0.5s linear;
+}
+#exp0{
+    display: none;
+    width: 31px;
+    height: 166px;
+    position: absolute;
+    left: 10px;
+    top: 50px;
+}
+#exp{
+    background-image: url("../images/ui/expMax.gif");
+    background-position: bottom;
+    width: 31px;
+    height: 40%;
+    position: absolute;
+    bottom: 0px;
+    -webkit-transition: all 0.2s linear;
+}
+#boom{
+    /*background: url("../images/ui/boom/boom7.png");*/
+    width: 33px;
+    height: 10px;
+    position: absolute;
+    top: 230px;
+    left: 10px;
+}
+#readyMain{
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: 150px;
+    width: 200px;
+    font-family: Calibri, "Microsoft YaHei";
+    text-shadow: white 1px 1px;
+}
+#readyMain img{
+    vertical-align: middle;
+    position: relative;
+}
+b{
+    color: red;
+}
+#startGame{
+    position: absolute;
+    left: 300px;
+    top: 450px;
+    z-index: 20;
+}
+#tip,#over{
+    position: absolute;
+    background-image: url("../images/ui/tipBg.png");
+    width: 177px;
+    height: 176px;
+    padding: 20px 10px 0 30px;
+    left: 40%;
+    top: 25%;
+    z-index: 999;
+    font-family: Calibri, "Microsoft YaHei";
+    font-size: 26px;
+    opacity: 0;
+}
+#tip img,#over img{
+    position: absolute;
+    bottom: 18px;
+
+}
+#over img:nth-of-type(1) {
+    right: 18px;
+}
+#tip img:nth-of-type(1){
+    left: 25px;
+}
+#tip img:nth-of-type(2){
+    right: 18px;
+}
+p{
+    font-size: 16px;
+    padding-top: 10px;
+}
+p span{
+    font-size: 12px;
+}
+a{
+    color: black;
+}
+#time{
+    display: none;
+    position: absolute;
+    left: 550px;
+    top: 50px;
+    height: 50px;
+    width: 240px;
+
+}
+.font30{
+    font-size: 30px;
+}
