@@ -14,11 +14,18 @@
 #section-1{
     text-align: center;
 }
-#section-1 .photo{
-    display:block;
-    cursor:pointer;
+#section-1 .photo-wrap{
+    text-align: center;
     padding:0;
     margin:20px auto;
+    width:220px;
+    height:220px;
+    overflow: hidden;
+}
+#section-1 .photo{
+    text-align: center;
+    cursor:pointer;
+    display: block;
     width:200px;
     height:200px;
     border:10px solid #faba00;

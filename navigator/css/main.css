@@ -61,23 +61,18 @@ body{ height:100%;overflow:hidden;background:#ffd200}
 .basic-info .prompt{ border-radius: 6px; text-align: left; width:250px; padding:10px; color:#e5e5e5; position: fixed; display:none; background-color:rgba(0,0,0,0.8); z-index: 999; }
 .basic-info .prompt .caret{ position: absolute; top:-15px; left:25px; display: inline-block; width: 0; height: 0; vertical-align: middle; border-bottom: 15px solid rgba(0,0,0,0.8); border-right: 15px solid transparent; border-left: 15px solid transparent; }
 .basic-info .prompt strong{ color:#faba00; }
-.basic-info h1{ font-size: 35px; color:#12b0eb; margin:20px 0; cursor:pointer; }
-.basic-info h1 span:hover{ text-decoration: underline; }
+.basic-info h2{ font-size: 22px; margin:20px 0; cursor:pointer; }
+.basic-info h2 a{color:#12b0eb;}
+.basic-info h2 span:hover{ text-decoration: underline; }
 .toppic{margin-left:auto;margin-right:auto;height:100%; }
 .browser.firstAnim .toppic{width:200px; position:relative;transition: all 0.8s  cubic-bezier(.57, .01, .13, 1.00)}
 .browser.firstAnim .toppic .teepic{ width:100%;height:auto;}
 .browser.firstAnim.hover .toppic{width:270px;transition: all 0.8s  cubic-bezier(.57, .01, .13, 1.00)}
-.pirceBox{ display:none;transition: all 0.8s cubic-bezier(.57, .01, .13, 1.03)}
-.hover .pirceBox{display:block; width:212px;margin:13% auto 0;transition: all 0.8s cubic-bezier(.57, .01, .13, 1.03)}
-.buyBox{ display:none;transition: all 0.8s cubic-bezier(.57, .01, .13, 1.03)}
-.hover .buyBox{ display:none; position:absolute; bottom:0; left:-37px;width:344px; height:46px;overflow:hidden; background:url(../img/btn-buy.png) no-repeat 0 0}
-.buyBox a{display:block;width:93px;height:46px; float:right;cursor:pointer; }
-.buyBox a:hover{text-decoration:none;background-image:url(../img/btn-buy.png); background-repeat:no-repeat}
+.buyBox{ display:none;transition: all 0.8s cubic-bezier(.57, .01, .13, 1.03); color: #fff;}
+.buyBoxBlack{color: #000;}
+.hover .buyBox{ display:block; position:absolute; bottom:0px; left:-37px;width:344px; height:46px;overflow:hidden;font-size: 20px;}
 .btn-nan:hover{ background-position:0 -58px}
 .btn-nv:hover{ background-position:0 -114px}
-.buyBox2{ height:42px; position:absolute; left:99px; bottom:12px;}
-.buyBox2 a{ display:block; float:left;width:157px; height:42px; cursor:pointer; background-image:url(../img/btn-buy2.png); background-repeat:no-repeat;}
-.buyBox2 a:hover{text-decoration:none;}
 .btn-nan2{ background-position:0 0px; margin-right:15px}
 .btn-nan2:hover{ background-position:0 -50px}
 .btn-nv2{ background-position:right 0px}

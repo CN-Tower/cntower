@@ -39,8 +39,6 @@ var $toInfo = $("#nav .toInfo"),
     });
     $(".btn-con:odd").click(function(){
         $.scrollTo('#section-1',1000);});
-    $photo.click(function(){$.scrollTo('#section-2',1000);
-    });
     //初始化wow.js
     if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
         new WOW().init();
