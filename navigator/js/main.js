@@ -50,7 +50,7 @@ function openSet(routerStr) {
         case "3dgallery":
             window.open("http://www.iishadow.com");
             break;
-		    case "iishadow":
+    	case "iishadow":
             window.open("http://www.shadowpuppetry.cn");
             break;
         case "vfarm":
@@ -59,14 +59,14 @@ function openSet(routerStr) {
         case "webfoss":
             window.open("http://www.nicengblog.com");
             break;
-		    case "myblog":
+    	case "myblog":
             window.open("http://www.niceblog.com.cn");
             break;
         case "studycop":
             window.open("http://www.nicengblog.com");
             break;
-		    case "yuelvxing":
-			      window.open(location.origin + ":3200");
+    	case "yuelvxing":
+	    window.open(location.origin + ":3200");
             break;
         default:
             window.open(location.origin + "/" + routerStr);
