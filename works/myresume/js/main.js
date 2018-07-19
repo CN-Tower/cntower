@@ -10,6 +10,7 @@ function indexLoaded() {
      * 滑动到指定区域
      */
     $(document).scrollTop(0);
+
     $(".logo").click(function () {
         scrollToSec('#section-1', 1000);
     });
@@ -24,7 +25,37 @@ function indexLoaded() {
         return false;
     });
 
+    var isScrolling = false;
+
     function scrollToSec(secId) {
+        if (!isScrolling) {
+            activeNav(secId);
+            isScrolling = true;
+            $("html:not(:animated),body:not(:animated)").animate({
+                scrollTop: $(secId).offset().top
+            }, 1000, function() {
+                isScrolling = false;
+            });
+        }
+    }
+
+    var currentSecId = '#section-1';
+
+    $(window).scroll(function(){
+        if (!isScrolling) {
+            $(".section").each(function() {
+                var ot = $(this).offset().top;
+                var st = $(window).scrollTop();
+                var curSecId = '#' + $(this).attr('id');
+                if(st + 360 >= ot && st < ot + $(this).height() && curSecId !== currentSecId) {
+                    currentSecId = curSecId;
+                    activeNav(curSecId);
+                }
+            });
+        }
+    });
+
+    function activeNav(secId) {
         $('.topnav li a').each(function() {
             if ($(this).attr("href") === secId) {
                 $(this).addClass('active');
@@ -32,9 +63,6 @@ function indexLoaded() {
                 $(this).removeClass('active');
             }
         });
-        $("html:not(:animated),body:not(:animated)").animate({
-            scrollTop: $(secId).offset().top
-        }, 1000 );
     }
 
     /**
