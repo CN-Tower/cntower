@@ -1,1 +1,98 @@
-﻿@charset "utf-8";/*===========================================================================================	1 重定义浏览器默认样式  ===========================================================================================	Name:			style_reset	Level:			Global	Explain:		重定义浏览器默认样式	Last Modify:	CN-Tower	Time:           2016-11-19 9:30  ===========================================================================================*/*{word-wrap:break-word}html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset{margin:0;padding:0}ul,ol,dl{list-style-type:none}html,body{*position:static;}html{font-family: sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}input,button{overflow: visible;vertical-align:middle;outline:none;}body,th,td,button,input,select,textarea{font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53";font-size:12px;color: #333;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased}body{line-height:1.6;}h1,h2,h3,h4,h5,h6{font-size:100%}a,area{outline:none;blr:expression(this.onFocus=this.blur())}a{text-decoration:none;cursor: pointer;color:#faba00;}a:hover{text-decoration:underline;outline:none}a.ie6:hover{zoom:1}a:focus{outline:none}a:hover,a:active{outline:none}:focus{outline:none}sub,sup{vertical-align:baseline}/*img*/img{border:0;vertical-align:middle}a img,img{-ms-interpolation-mode:bicubic}/*IE下a:hover 背景闪烁*/html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}/*HTML5 reset*/header,footer,section,aside,details,menu,article,section,nav,address,hgroup,figure,figcaption,legend{display:block;margin:0;padding:0}time{display:inline}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}legend{width:100%;margin-bottom:20px;font-size:21px;line-height:40px;border:0;border-bottom:1px solid #e5e5e5}legend small{font-size:15px;color:#999}svg:not(:root) {overflow: hidden}fieldset {padding: 0.35em 0.625em 0.75em;margin: 0 2px;border: 1px solid #c0c0c0}.cl:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.cl,.clearfix{zoom:1}.l{float:left!important;_display:inline}.r{float:right!important;_display:inline}.text-l{text-align:left}.text-r{text-align:right}.text-c{text-align:center}.va-t{ vertical-align:top!important}.va-m{ vertical-align:middle!important}.va-b{ vertical-align:bottom!important}.wp{ width:960px; margin:0 auto}html,body,#container,.section{width:100%;height:100%}/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/::-webkit-scrollbar { width: 15px; background: #e5e5e5; border-radius: 10px; }/*定义滚动条轨道 内阴影+圆角*/::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); border-radius: 10px; background-color: #e5e5e5; }/*定义滑块 内阴影+圆角*/::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2); background-color: #555; }/*===========================================================================================	2 导航条样式  ===========================================================================================*/.topbar{ position:fixed; top:0; left:0; right:0; width:100%; height:58px; background-color:rgba(0,0,0,0.8);z-index:9}.logo{display:block; width:180px; height:58px; cursor:pointer; background:url(../images/logo.png) no-repeat 0 center; margin-right:20px}.topnav{ width:512px;margin-right: -20px;}.topnav li{ display:inline;}.topnav li a{ display:inline-block; height:58px; line-height:58px; font-size:16px; color:#fff; text-decoration:none; padding:0 16px}.topnav li a .caret{display: inline-block; width: 0; height: 0; margin-left: 8px; vertical-align: middle; border-top: 4px dashed; border-right: 4px solid transparent; border-left: 4px solid transparent;}.topnav li a:hover,.topnav li a.active,.topnav li.current a{ color:#2b2b2b; text-decoration:none; background-color:#faba00}/*===========================================================================================	2 内容区样式  ===========================================================================================*/#section-1{background-image:url(../images/1.jpg)}#section-2{background-image:url(../images/2.jpg)}#section-3{background-image:url(../images/3.jpg)}#section-4{background-image:url(../images/4.jpg)}#section-5{background-image:url(../images/5.jpg)}#section-6{background-image:url(../images/6.jpg)}.section{min-height:650px;background:repeat-x center center fixed;background-size:cover;overflow:hidden}.section .wp{ position:relative; height:100%; display:table;}.section .tuwen{display: table-cell;height:100%;overflow: hidden;vertical-align: middle}.section .tuwennr{ padding:25px; width:640px; height:auto;background-color:rgba(0,0,0,0.8);}.tuwen .title{ font-size:24px;font-weight:bold;color:#faba00}.tuwen .info{ color:#fff; font-size:14px; line-height:24px; margin-top:25px}.tuwen .btnbar{ margin-top:25px;}.tuwen .btn-con{ display:inline-block; cursor:pointer; width:144px; height:44px; line-height:44px; color:#faba00; font-size:16px;border:solid 2px #faba00; text-decoration:none;}.paddingW{width:30px; display:inline-block;transition:width 0.2s linear 0s}.tuwen .btn-con:hover{ background-color:#faba00; color:#2b2b2b}.tuwen .btn-con:hover .paddingW{ width:40px;}.newFooter{ background-color:#2d2d2d;}.newFooter .wp{padding:30px 0}.weixin-pic{ float:left; width:168px; height:168px; background:url(../images/weixin.png) no-repeat 0 0;background-size: 100%; margin-right:16px;}.weixin-text{ float:left; width:158px;height:168px; border-right:solid 1px #3a3a3a; color:#fff}.copyrightWP{ float:right; width:562px; color:#979797}.copyrightWP .tit{ font-size:14px; color:#fff}.copyrightWP .tit a{color:#fff}.copyrightWP li{ line-height:22px}.copyrightWP a{ color:#979797}.copyrightWP .leftbox{ float:left; width:268px;}.copyrightWP .leftbox2{ float:left; width:144px;}.copyrightWP .footer-logo{ display:inline-block; float:left; width:100px; height:30px;cursor:pointer;background:url(../images/logo.png) no-repeat 0 0;background-size: 100%;}.copyright{ color:#666; margin-top:19px }	
+@charset "utf-8";
+/*===========================================================================================
+	1 重定义浏览器默认样式
+  ===========================================================================================
+	Name:			style_reset
+	Level:			Global
+	Explain:		重定义浏览器默认样式
+	Last Modify:	CN-Tower
+	Time:           2016-11-19 9:30
+  ===========================================================================================*/
+*{word-wrap:break-word}
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset{margin:0;padding:0}
+ul,ol,dl{list-style-type:none}
+html,body{*position:static;}
+html{font-family: sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button{overflow: visible;vertical-align:middle;outline:none;}
+body,th,td,button,input,select,textarea{font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53";font-size:12px;color: #333;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased}
+body{line-height:1.6;}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a,area{outline:none;blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none;cursor: pointer;color:#faba00;}
+a:hover{text-decoration:underline;outline:none}
+a.ie6:hover{zoom:1}
+a:focus{outline:none}
+a:hover,a:active{outline:none}:focus{outline:none}
+sub,sup{vertical-align:baseline}
+/*img*/
+img{border:0;vertical-align:middle}
+a img,img{-ms-interpolation-mode:bicubic}
+/*IE下a:hover 背景闪烁*/
+html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+/*HTML5 reset*/
+header,footer,section,aside,details,menu,article,section,nav,address,hgroup,figure,figcaption,legend{display:block;margin:0;padding:0}time{display:inline}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none}
+legend{width:100%;margin-bottom:20px;font-size:21px;line-height:40px;border:0;border-bottom:1px solid #e5e5e5}
+legend small{font-size:15px;color:#999}
+svg:not(:root) {overflow: hidden}
+fieldset {padding: 0.35em 0.625em 0.75em;margin: 0 2px;border: 1px solid #c0c0c0}
+.cl:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.cl,.clearfix{zoom:1}
+.l{float:left!important;_display:inline}.r{float:right!important;_display:inline}
+.text-l{text-align:left}.text-r{text-align:right}.text-c{text-align:center}
+.va-t{ vertical-align:top!important}.va-m{ vertical-align:middle!important}.va-b{ vertical-align:bottom!important}
+.wp{ width:960px; margin:0 auto}
+html,body,#container,.section{width:100%;height:100%}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar { width: 15px; background: #e5e5e5; border-radius: 10px; }
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); border-radius: 10px; background-color: #e5e5e5; }
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2); background-color: #555; }
+/*===========================================================================================
+	2 导航条样式
+  ===========================================================================================*/
+.topbar{ position:fixed; top:0; left:0; right:0; width:100%; height:58px; background-color:rgba(0,0,0,0.8);z-index:9}
+.logo{display:block; width:180px; height:58px; cursor:pointer; background:url(../images/logo.png) no-repeat 0 center; margin-right:20px}
+.topnav{ width:512px;margin-right: -20px;}
+.topnav li{ display:inline;}
+.topnav li a{ display:inline-block; height:58px; line-height:58px; font-size:16px; color:#fff; text-decoration:none; padding:0 16px}
+.topnav li a .caret{display: inline-block; width: 0; height: 0; margin-left: 8px; vertical-align: middle; border-top: 4px dashed; border-right: 4px solid transparent; border-left: 4px solid transparent;}
+.topnav li a:hover,.topnav li a.active{ color:#2b2b2b; text-decoration:none; background-color:#faba00}
+/*===========================================================================================
+	2 内容区样式
+  ===========================================================================================*/
+#section-1{background-image:url(../images/1.jpg)}
+#section-2{background-image:url(../images/2.jpg)}
+#section-3{background-image:url(../images/3.jpg)}
+#section-4{background-image:url(../images/4.jpg)}
+#section-5{background-image:url(../images/5.jpg)}
+#section-6{background-image:url(../images/6.jpg)}
+.section{min-height:650px;background:repeat-x center center fixed;background-size:cover;overflow:hidden}
+.section .wp{ position:relative; height:100%; display:table;}
+.section .tuwen{display: table-cell;height:100%;overflow: hidden;vertical-align: middle}
+.section .tuwennr{ padding:25px; width:640px; height:auto;background-color:rgba(0,0,0,0.8);}
+.tuwen .title{ font-size:24px;font-weight:bold;color:#faba00}
+.tuwen .info{ color:#fff; font-size:14px; line-height:24px; margin-top:25px}
+.tuwen .btnbar{ margin-top:25px;}
+.tuwen .btn-con{ display:inline-block; cursor:pointer; width:144px; height:44px; line-height:44px; color:#faba00; font-size:16px;border:solid 2px #faba00; text-decoration:none;}
+.paddingW{width:30px; display:inline-block;transition:width 0.2s linear 0s}
+.tuwen .btn-con:hover{ background-color:#faba00; color:#2b2b2b}
+.tuwen .btn-con:hover .paddingW{ width:40px;}
+.newFooter{ background-color:#2d2d2d;}
+.newFooter .wp{padding:30px 0}
+.weixin-pic{ float:left; width:168px; height:168px; background:url(../images/weixin.png) no-repeat 0 0;background-size: 100%; margin-right:16px;}
+.weixin-text{ float:left; width:158px;height:168px; border-right:solid 1px #3a3a3a; color:#fff}
+.copyrightWP{ float:right; width:562px; color:#979797}
+.copyrightWP .tit{ font-size:14px; color:#fff}
+.copyrightWP .tit a{color:#fff}
+.copyrightWP li{ line-height:22px}
+.copyrightWP a{ color:#979797}
+.copyrightWP .leftbox{ float:left; width:268px;}
+.copyrightWP .leftbox2{ float:left; width:144px;}
+.copyrightWP .footer-logo{ display:inline-block; float:left; width:100px; height:30px;cursor:pointer;background:url(../images/logo.png) no-repeat 0 0;background-size: 100%;}
+.copyright{ color:#666; margin-top:19px }
+
+	
