@@ -48,16 +48,16 @@ function openSet(routerStr) {
             window.open("http://www.h5c3js.com");
             break;
         case "3dgallery":
-            window.open("http://www.iishadow.com");
+            window.open("http://www.paletxui.com");
             break;
     	case "iishadow":
-            window.open("http://www.shadowpuppetry.cn");
+            window.open("http://www.cnshadow.com.cn");
             break;
         case "vfarm":
             window.open("http://www.reactngvue.com");
             break;
         case "webfoss":
-            window.open("http://www.nicengblog.com");
+            window.open("http://www.developtools.net");
             break;
     	case "myblog":
             window.open("http://www.niceblog.com.cn");
