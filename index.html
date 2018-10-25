@@ -1,83 +1,133 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-    <title>CN-Tower</title>
-    <meta name="description" content="一个关于互联网web作品展示和技术交流的网站"/>
-    <meta name="keywords" content="web、web项目、web developer"/>
-    <LINK rel="Bookmark" href="./assets/img/favicon.ico">
-    <LINK rel="Shortcut Icon" href="./assets/img/favicon.ico"/>
-    <link href="./assets/css/main.css" rel="stylesheet" type="text/css"/>
-    <!--[if IE 6]>
-    <script type="text/javascript" src="./assets/js/DD_belatedPNG_0.0.8a-min.js"></script>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <title>CN-Tower</title>
+  <meta name="description" content="一个关于互联网web作品展示和技术交流的网站" />
+  <meta name="keywords" content="web、web项目、web developer" />
+  <LINK rel="Bookmark" href="./img/favicon.ico">
+  <LINK rel="Shortcut Icon" href="./img/favicon.ico" />
+  <link href="./css/main.css" rel="stylesheet" type="text/css" />
+  <!--[if IE 6]>
+    <script type="text/javascript" src="./js/DD_belatedPNG_0.0.8a-min.js"></script>
     <script>DD_belatedPNG.fix('.pngfix,.icon,.list-icon');</script>
     <![endif]-->
 </head>
+
 <body>
-<div id="browser-0" class="browser">
-    <a class="action action-down" href="./assets/2nd.html" title="第二波"></a>
-    <div class="basic-info">
+  <style type="text/css">
+    #browser-hint {
+      display: none;
+      text-align: center;
+      width: 100%;
+      height: 400px;
+      margin-top: 80px;
+    }
+
+    #browser-hint img {
+      border: none;
+    }
+
+    #browser-hint a {
+      text-decoration: none;
+      display: inline-block;
+      overflow: hidden;
+    }
+  </style>
+  <div id="browser-hint">
+    <div class="link-img">
+      <a href="http://www.google.cn/chrome/browser/">
+        <img src="./img/chrome.png" />
+      </a>
+      <a href="https://www.mozilla.org/en-US/firefox/products/?v=b">
+        <img src="./img/firefox.png" />
+      </a>
+    </div>
+    <div class="hint-msg">
+      <p>您好，当前的浏览器不支持本网站，请使用谷歌或火狐浏览器打开！</p>
+      <p>Hi, the current browsers do not support this website<br>
+        please use the Chrome or Firefox browser to get a better experience!</p>
+    </div>
+  </div>
+  <div id="app-main">
+    <div id="browser-0" class="browser">
+      <a class="action action-down" href="./2nd.html" title="第二波"></a>
+      <div class="basic-info">
         <a href="http://github.com/CN-Tower" target="_blank"><span class="photo"></span></a>
         <div class="prompt">
-            <em class="caret"></em>
-            <p>
-                姓名：沈涛(CN-Tower)<br>
-                职业：<strong>web开发工程师</strong><br>
-                GitHub：@CN-Tower<br>
-                座右铭：每天进步一小点，有朝一日成大牛！
-            </p>
+          <em class="caret"></em>
+          <p>
+            姓名：沈涛(CN-Tower)<br>
+            职业：<strong>web开发工程师</strong><br>
+            GitHub：@CN-Tower<br>
+            座右铭：每天进步一小点，有朝一日成大牛！
+          </p>
         </div>
         <h2 class="wow bounceInDown" data-wow-delay="0.8s">
-            <a title="关注我的GitHub!" href="http://github.com/CN-Tower" target="_blank"><span>@CN-Tower</span></a>
+          <a title="关注我的GitHub!" href="http://github.com/CN-Tower" target="_blank"><span>@CN-Tower</span></a>
         </h2>
+      </div>
+      <img style="width:100%;" src="./img/8TH-1.png">
     </div>
-    <img style="width:100%;" src="./assets/img/8TH-1.png">
-</div>
-<div id="browser-1" class="browser browser-hover" onclick="openSet('myresume')">
-    <div class="toppic">
-        <img class="teepic" src="./assets/img/TEE1.png">
+    <div id="browser-1" class="browser browser-hover" onclick="openSet('myresume')">
+      <div class="toppic">
+        <img class="teepic" src="./img/TEE1.png">
         <div class="buyBox buyBoxBlack">
-            <span>http://www.h5c3js.com</span>
+          <span>http://www.h5c3js.com</span>
         </div>
+      </div>
     </div>
-</div>
-<div id="browser-2" class="browser browser-hover" onclick="openSet('3dgallery')">
-    <div class="toppic">
-        <img class="teepic" src="./assets/img/TEE2.png">
+    <div id="browser-2" class="browser browser-hover" onclick="openSet('3dgallery')">
+      <div class="toppic">
+        <img class="teepic" src="./img/TEE2.png">
         <div class="buyBox">
-            <span>http://www.paletxui.com</span>
+          <span>http://www.paletxui.com</span>
         </div>
+      </div>
     </div>
-</div>
-<div id="browser-3" class="browser browser-hover" onclick="openSet('iishadow')">
-    <div class="toppic">
-        <img class="teepic" src="./assets/img/TEE3.png">
+    <div id="browser-3" class="browser browser-hover" onclick="openSet('iishadow')">
+      <div class="toppic">
+        <img class="teepic" src="./img/TEE3.png">
         <div class="buyBox buyBoxBlack">
-            <span>http://www.cnshadow.com.cn</span>
+          <span>http://www.cnshadow.com.cn</span>
         </div>
+      </div>
     </div>
-</div>
-<div id="browser-4" class="browser browser-hover" onclick="openSet('vfarm')">
-    <div class="toppic">
-        <img class="teepic" src="./assets/img/TEE4.png">
+    <div id="browser-4" class="browser browser-hover" onclick="openSet('vfarm')">
+      <div class="toppic">
+        <img class="teepic" src="./img/TEE4.png">
         <div class="buyBox">
-            <span>http://www.reactngvue.com</span>
+          <span>http://www.reactngvue.com</span>
         </div>
+      </div>
     </div>
-</div>
-<div id="browser-5" class="browser browser-hover" onclick="openSet('webfoss')">
-    <div class="toppic">
-        <img class="teepic" src="./assets/img/TEE5.png">
+    <div id="browser-5" class="browser browser-hover" onclick="openSet('webfoss')">
+      <div class="toppic">
+        <img class="teepic" src="./img/TEE5.png">
         <div class="buyBox">
-            <span>http://www.developtools.com/webfoss</span>
+          <span>http://www.developtools.com/webfoss</span>
         </div>
+      </div>
     </div>
-</div>
-<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="./assets/js/unslider.min.js"></script>
-<script type="text/javascript" src="./assets/js/main.js"></script>
+  </div>
+  <script>
+    var userAgent = navigator.userAgent;
+    var isFirefox = userAgent.indexOf("Firefox") > -1;
+    var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1;
+    var isChrome = userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1;
+    if (!(isFirefox || isChrome || isSafari)) {
+      document.body.style.background = '#ffffff';
+      document.getElementById('browser-hint').style.display = 'block';
+      document.getElementById('app-main').style.display = 'none';
+    }
+  </script>
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/unslider.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
+
 </html>
