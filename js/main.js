@@ -41,37 +41,8 @@ function promptActive() {
     });
 }
 
-function openSet(routerStr) {
-	//window.open(location.origin + "/" + routerStr);
-    switch (routerStr) {
-        case "myresume":
-            window.open("http://www.h5c3js.com");
-            break;
-        case "3dgallery":
-            window.open("http://www.paletxui.com");
-            break;
-    	case "iishadow":
-            window.open("http://www.cnshadow.com.cn");
-            break;
-        case "vfarm":
-            window.open("http://www.reactngvue.com");
-            break;
-        case "webfoss":
-            window.open("http://www.developtools.net");
-            break;
-    	case "myblog":
-            window.open("http://www.niceblog.com.cn");
-            break;
-        case "studycop":
-            window.open("http://www.nicengblog.com");
-            break;
-    	case "yuelvxing":
-	    window.open(location.origin + ":3200");
-            break;
-        default:
-            window.open(location.origin + "/" + routerStr);
-            break;
-    }
+function openUrl(url) {
+	window.open(url);
 }
 
 function initSiteAnimation() {
