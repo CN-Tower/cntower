@@ -50,6 +50,7 @@ function initSiteAnimation() {
         $("#browser-0").addClass("firstAnim");
         setTimeout(function() {
             $('.basic-info').slideDown();
+            $('.my-links').slideDown();
         }, 500);
     }, 0);
     /2nd/ig.test(location.href) ? page2ndAnim() : page1stAnim();
