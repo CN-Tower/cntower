@@ -148,6 +148,11 @@ body {
   justify-content: start;
   align-items: flex-start;
 }
+@media (max-width: 1000px) {
+  #app-main {
+    display: block;
+  }
+}
 .browser {
   width: 0px;
   height: 100%;
