@@ -286,7 +286,7 @@ body {
   display: none;
 }
 .my-links-wp {
-  width: 120px;
+  width: 150px;
   margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
@@ -297,10 +297,10 @@ body {
 }
 .my-links a, .my-links a:hover, .my-links a:active, .my-links a:visited {
   color: #231f20;
-  font-size: 18px;
+  font-size: 24px;
 }
 .my-links a:hover {
-  font-size: 19px;
+  font-size: 25px;
 }
 .toppic {
   margin-left: auto;
