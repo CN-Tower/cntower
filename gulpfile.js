@@ -47,7 +47,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('revSrc', () => {
-  return gulp.src(['./src/**', '!./src/lib/**'])
+  return gulp.src(['./src/**', '!./src/cntower/lib/**'])
     .pipe(revAll.revision({
       dontRenameFile: [/favicon.ico/g, /index.html/g],
       transformFilename: (file, hash) => {
@@ -64,7 +64,7 @@ gulp.task('revSrc', () => {
 });
 
 gulp.task('copyLib', () => {
-  gulp.src(['./src/lib/**']).pipe(gulp.dest('./dist/lib'));
+  gulp.src(['./src/cntower/lib/**']).pipe(gulp.dest('./dist/cntower/lib'));
 });
 
 gulp.task('logInfo', () => {
