@@ -1,0 +1,232 @@
+.q{
+
+	width: 100%;
+	height: 100%;
+	/*border: 1px solid white;*/
+	/*background-image: linear-gradient(to right,#DDDDFF,#9999FF);*/
+	background-image: radial-gradient(ellipse at left center,#a6b2be,#96c9dc,#b8ccdb,#5b777d);
+    padding: 80px 0;
+}
+.w{
+	width: 100%;
+	height: 100%;
+	/*border: 1px solid black;*/
+	font-family: 'Poiret One', cursive;
+	font-size: 42px;
+	color: white;
+}
+.e{
+	display: block;
+	/*margin-top: 80px;*/
+}
+.pic{
+	font-family: 'Poiret One', cursive;
+	font-size: 28px;
+	color: white;
+	position: relative;
+	top: -200px;
+}
+.pic1{
+	display: inline-block;
+	margin-top: -60px;
+	
+}
+.pic2{
+	display: inline-block;
+	margin-top: -60px;
+}
+.b{
+	width: 245px;
+	height: 200px;
+}
+.last{
+	font-family: 'Poiret One', cursive;
+	font-size: 15px;
+	color: white;
+	display: inline-block;
+	margin-top: 20px;
+	position: relative;
+	top: -180px;
+}
+.c{
+	display: inline-block;
+	margin-top: -10px;
+}
+.d{
+	display: inline-block;
+}
+
+.divcss5{
+    margin:10px auto;
+
+}
+.divcss5 img{
+    border-radius:50%;
+}
+.rotate2{
+    animation: rotate2 3s;
+}
+
+
+.inpic{
+	color: white;
+	font-family: 'Poiret One', cursive;
+	font-size: 8px;
+	display: inline-block;
+	margin-top: 40px;
+}
+.line{
+    margin:0;
+    padding:0;
+    width:120px;
+    height:1px;
+    background-color:white;
+    overflow:hidden;
+    margin-left: 30px;
+}
+.inpic1{
+	color: white;
+	font-size: 2px;
+	display: inline-block;
+	margin-top: 10px;
+}
+.circle1 {
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background-color:#677ca7;
+    position: relative;
+    top: -388px;
+    left: 35px;
+    transform: scale(0);
+    transition:all 0.75s linear;
+    
+}
+
+.b:hover .circle1{
+	transform: scale(1);
+	
+}
+.circle12 {
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background-color:#677ca7;
+    position: relative;
+    top: -388px;
+    left: 35px;
+    transform: scale(0);
+    transition:all 0.75s linear;
+    
+    
+}
+.b:hover .circle12{
+	transform: scale(1);
+	
+}
+
+.circle123 {
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background-color:#677ca7;
+    position: relative;
+    top: -388px;
+    left: 35px;
+    transform: scale(0);
+    transition:all 0.75s linear;
+    
+}
+.b:hover .circle123{
+	transform: scale(1);
+	
+}
+.circle1234 {
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background-color:#677ca7;
+    position: relative;
+    top: -388px;
+    left: 35px;
+    transform: scale(0);
+    transition:all 0.75s linear;
+    
+}
+.b:hover .circle1234{
+	transform: scale(1);
+	
+}
+.circlea{
+	display: block;
+	width:180px;
+    height:180px;
+    border-radius:50%;
+    background-color:white;
+    position: relative;
+    top: -208px;
+    left: 35px;
+    transform: scale(0);
+    transition:all 0.5s linear;
+}
+.b:hover .circlea{
+	transform: scale(1);
+	
+}
+.circleb{
+    display: block;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background-color:white;
+    position: relative;
+    top: -208px;
+    left: 35px;
+    transform: scale(0);
+    transition:all 0.5s linear;
+}
+.b:hover .circleb{
+	transform: scale(1);
+	
+}
+.circlec{
+    display: block;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background-color:white;
+    position: relative;
+    top: -208px;
+    left: 35px;
+    transform: scale(0);
+    transition:all 0.5s linear;
+}
+.b:hover .circlec{
+	transform: scale(1);
+	
+}
+.circled{
+    display: block;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background-color:white;
+    position: relative;
+    top: -208px;
+    left: 35px;
+    transform: scale(0);
+    transition:all 0.5s linear;
+}
+.b:hover .circled{
+	transform: scale(1);
+	
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: translateX(1237px) rotate(900deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}

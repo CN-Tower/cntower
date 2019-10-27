@@ -1,0 +1,243 @@
+.wrap {
+  font-family: "微软雅黑";
+  width: 100%;
+  min-height: 100px;
+}
+.wrap section {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+}
+.wrap section .aboutpage {
+  float: left;
+  width: 100%;
+}
+.wrap section .aboutpage .aboutbanner {
+  float: left;
+  width: 100%;
+  height: 1080px;
+  background: url("../img/about/aboutbg01-209145805785.jpg") no-repeat center center;
+  position: relative;
+  z-index: 1;
+}
+.wrap section .aboutpage .aboutbanner .bannertext {
+  position: absolute;
+  width: 856px;
+  left: 50%;
+  margin-left: -428px;
+}
+.wrap section .aboutpage .aboutbanner .bannertext h2 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 36px;
+  margin-top: 152px;
+  font-weight: normal;
+}
+.wrap section .aboutpage .aboutbanner .bannertext p {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-top: 51px;
+  line-height: 27px;
+}
+.wrap section .aboutpage .aboutbanner .numberbox {
+  top: 50.5%;
+  position: absolute;
+  width: 730px;
+  left: 50%;
+  margin-left: -365px;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box1 {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box1 span {
+  font-size: 50px;
+  color: #fff;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box1 p {
+  display: block;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 18px;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box2 {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box2 span {
+  font-size: 50px;
+  color: #fff;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box2 p {
+  display: block;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 18px;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box3 {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box3 span {
+  font-size: 50px;
+  color: #fff;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box3 p {
+  display: block;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 18px;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box4 {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box4 span {
+  font-size: 50px;
+  color: #fff;
+}
+.wrap section .aboutpage .aboutbanner .numberbox .box4 p {
+  display: block;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 18px;
+}
+.wrap section .part1 {
+  float: left;
+  width: 100%;
+  height: 1780px;
+  background: url("../img/about/servicebg02-6b61abeb6f9d.png") no-repeat center top;
+  margin-top: -685px;
+  position: relative;
+  z-index: 2;
+}
+.wrap section .part1 .blockinner {
+  margin-top: 685px;
+}
+.wrap section .part1 .blockinner .textbox {
+  width: 730px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+.wrap section .part1 .blockinner .textbox p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+.wrap section .part1 .blockinner .aboutimg {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+.wrap section .part2 {
+  float: left;
+  width: 100%;
+  height: 1780px;
+  background: url("../img/about/servicebg03-52c3966cf2da.png") no-repeat center top;
+  margin-top: -600px;
+  position: relative;
+  z-index: 1;
+}
+.wrap section .part2 .blockinner {
+  margin-top: 580px;
+}
+.wrap section .part2 .blockinner .textbox {
+  width: 730px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+.wrap section .part2 .blockinner .textbox p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+.wrap section .part2 .blockinner .aboutimg {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+.wrap section .part3 {
+  float: left;
+  width: 100%;
+  height: 1780px;
+  background: url("../img/about/servicebg02-6b61abeb6f9d.png") no-repeat center top;
+  margin-top: -880px;
+  position: relative;
+  z-index: 2;
+}
+.wrap section .part3 .blockinner {
+  margin-top: 700px;
+}
+.wrap section .part3 .blockinner .textbox {
+  width: 730px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+.wrap section .part3 .blockinner .textbox p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+.wrap section .part3 .blockinner .aboutimg {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+.wrap section .button {
+  float: left;
+  width: 100%;
+  margin-top: -150px;
+  position: relative;
+  z-index: 5;
+}
+.wrap section .button .blockinner {
+  margin-top: -100px;
+  float: right;
+  margin-right: 200px;
+}
+.wrap section .button .blockinner span {
+  display: block;
+  width: 231px;
+  height: 37px;
+  background: url(../img/service/btn-c4ea70060bdc.png);
+  background-position: 0 74px;
+}

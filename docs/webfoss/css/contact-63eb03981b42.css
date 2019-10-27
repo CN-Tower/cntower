@@ -1,0 +1,440 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.warp {
+  width: 100%;
+}
+.header {
+  height: 65px;
+  background-color: blue;
+}
+.con {
+  background: url("../img/contact/aa-b3207f2c8306.jpg") no-repeat;
+  height: 735px;
+  background-position: -310px -189px;
+}
+.con .con4 {
+  width: 1120px;
+  height: 140px;
+  margin: auto;
+  overflow: hidden;
+}
+.con .con4 div {
+  float: left;
+}
+.con .con4 .con41 {
+  background: url("../img/contact/contactborder01-9d2109c71626.png") no-repeat;
+  width: 303px;
+  height: 130px;
+  margin-top: 11px;
+}
+.con2 {
+  overflow: hidden;
+  width: 1115px;
+  height: 66px;
+  margin: auto;
+}
+.con2 ul li {
+  float: left;
+  width: 25%;
+}
+.con2 ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+.con4 .con42 {
+  background: url("../img/contact/contactborder02-05639626b793.png") no-repeat;
+  height: 120px;
+  width: 303px;
+  margin: 15px 80px 0 80px;
+}
+.con4 .con43 {
+  background: url("../img/contact/contactborder03-4ad080d91297.png") no-repeat;
+  height: 150px;
+  width: 303px;
+}
+.con44 {
+  margin: 45px 0 0 10px;
+  color: white;
+}
+.con45 {
+  margin: 59px 0 0 10px;
+  color: white;
+}
+.con .con5 {
+  text-align: center;
+  font-weight: 100;
+  height: 37px;
+  width: 367px;
+  margin: 0 auto;
+  padding-top: 128px;
+  line-height: 50px;
+  color: white;
+}
+.con .con6 {
+  margin: 46px auto;
+  width: 830px;
+  color: white;
+  font-weight: 100;
+  font-size: 14px;
+}
+.con9 {
+  width: 900px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 89px;
+}
+.con3 {
+  width: 260px;
+  float: right;
+  height: 100px;
+  text-align: left;
+  line-height: 120px;
+  position: relative;
+}
+.con3 .con7 {
+  display: block;
+  padding-left: 10px;
+}
+.con3 .con8 {
+  display: block;
+  -webkit-animation: mov1 2s infinite;
+  position: absolute;
+}
+@keyframes mov1 {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes mov1 {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@-moz-keyframes mov1 {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@-o-keyframes mov1 {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+.bg {
+  height: 680px;
+  background: url("../img/contact/shanghai-991139ba8054.jpg") no-repeat 50% -680px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.con1 {
+  width: 989px;
+  text-align: center;
+  position: absolute;
+  left: -817px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.con1 p {
+  width: 600px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.con1 h2 {
+  font-weight: 300;
+  padding: 30px;
+  color: white;
+}
+.con1 .con11 {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 20px;
+  float: right;
+}
+.con1 .con15 {
+  width: 300px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 20px;
+  margin-right: -15px;
+}
+.con1 #con16 {
+  width: 200px;
+  height: 27px;
+  line-height: 25px;
+  font-size: 20px;
+  float: right;
+  display: inline-block;
+  border: 1px solid #a9a9a9;
+  text-align: center;
+  color: cornflowerblue;
+}
+.con1 textarea {
+  margin-top: 10px;
+  float: right;
+  width: 500px;
+  height: 100px;
+  resize: none;
+}
+.con1 .con13 {
+  display: block;
+  margin-top: 15px;
+  width: 50px;
+  float: left;
+  margin-left: 20px;
+}
+.con1 span {
+  text-align: left;
+  color: white;
+}
+.con1 .con14 {
+  margin: auto;
+  width: 450px;
+  height: 50px;
+}
+.con1 .con14 input:nth-of-type(1) {
+  float: left;
+  width: 250px;
+  height: 35px;
+  margin-top: 30px;
+  margin-left: 55px;
+}
+.con1 .con14 input:nth-of-type(2) {
+  float: right;
+  width: 100px;
+  height: 35px;
+  margin-top: 30px;
+}
+#maxdiv {
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  z-index: 10;
+  background: black;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  top: 0;
+  left: 0;
+  display: none;
+}
+#mindiv {
+  width: 880px;
+  height: 655px;
+  background: white;
+  border: 1px solid white;
+  position: absolute;
+  top: 90px;
+  left: 310px;
+  z-index: 20;
+  display: none;
+}
+#mindiv #map {
+  width: 845px;
+  height: 614px;
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  z-index: 100;
+  border: #ccc solid 1px;
+  font-size: 12px;
+}
+#mindiv #closediv {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 200;
+  font-size: 20px;
+  color: #717171;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  background: #efefef;
+  z-index: 101;
+}
+.con1.active {
+  left: 270px;
+}
+.message {
+  width: 100%;
+  min-height: 300px;
+  background: #282f35 none repeat scroll 0 0;
+  padding: 2em 0;
+}
+.message .container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1210px;
+  min-height: 300px;
+}
+.message .container .head h2 {
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-size: 34px;
+}
+.message .container .head span {
+  background: #c59a6d none repeat scroll 0 0;
+  display: block;
+  height: 2px;
+  width: 7%;
+  margin: 15px auto;
+}
+.message .container .contact-grids {
+  width: 1210px;
+  height: 320px;
+}
+.message .container .contact-grids .contact-left {
+  margin-top: -30px;
+  text-align: center;
+  width: 30%;
+  float: left;
+  height: 320px;
+}
+.message .container .contact-grids .contact-left h4 {
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0 0 1.5em;
+  padding: 0;
+  text-transform: uppercase;
+}
+.message .container .contact-grids .contact-left .address li {
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0 0 1.5em;
+  padding: 0;
+  text-transform: uppercase;
+}
+.message .container .contact-grids .contact-left .social-icons {
+  margin: 2em 0 0;
+  padding: 0;
+}
+.message .container .contact-grids .contact-left .social-icons li {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 22px;
+  padding: 10px;
+  color: white;
+}
+.message .container .contact-grids .contact-left .social-icons li:hover {
+  color: #c59a6d;
+  transition: all 1s;
+}
+.message .container .contact-grids .contact-right {
+  box-sizing: border-box;
+  width: 60%;
+  height: 320px;
+  float: left;
+}
+.message .container .contact-grids .contact-right form .text-boxs {
+  color: #333;
+}
+.message .container .contact-grids .contact-right form .text-boxs .text-box {
+  float: left;
+  margin-bottom: 2em;
+  width: 43%;
+  margin-right: 6%;
+}
+.message .container .contact-grids .contact-right form .text-boxs .text-box input {
+  cursor: pointer;
+  background: #1e2429 none repeat scroll 0 0;
+  border-color: #1e2429 -moz-use-text-color -moz-use-text-color;
+  border-style: solid none none;
+  border-width: 2px medium medium;
+  color: #94989b;
+  font-family: "Asap", sans-serif;
+  font-size: 1em;
+  outline: medium none;
+  padding: 0.8em;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  line-height: inherit;
+}
+.message .container .contact-grids .contact-right form .text-boxs .text-box input:hover {
+  border-color: #c59a6d;
+}
+.message .container .contact-grids .contact-right form .subject-box {
+  box-sizing: border-box;
+  color: #333;
+}
+.message .container .contact-grids .contact-right form .subject-box textarea {
+  cursor: pointer;
+  background: #1e2429 none repeat scroll 0 0;
+  border-color: #1e2429 -moz-use-text-color -moz-use-text-color;
+  border-style: solid none none;
+  border-width: 2px medium medium;
+  color: #94989b;
+  font-family: "Asap", sans-serif;
+  font-size: 1em;
+  outline: medium none;
+  padding: 0.8em;
+  transition: all 0.5s ease 0s;
+  width: 92%;
+}
+.message .container .contact-grids .contact-right form .subject-box textarea:hover {
+  border-color: #c59a6d;
+}
+.message .container .contact-grids .contact-right form .infoBtn {
+  background: #c59a6d none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  outline: medium none;
+  padding: 0.7em 2.5em;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  margin-right: 2em;
+}
+.message .container .contact-grids .contact-right form .infoBtn:hover {
+  background: #a1774b  none repeat scroll 0 0;
+}

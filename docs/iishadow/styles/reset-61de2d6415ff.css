@@ -1,0 +1,45 @@
+
+/*                     *-------------Hello---------------*                     */
+@charset "utf-8";
+/*-------------------------------初始化常用样式--------------------------------*/
+/*                    *--------------start---------------*                     */
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{padding: 0; margin: 0;}
+
+/* 初始化文字样式（可酌情修改） */
+body{font-family:"microsoft yahei";background:url("../materials/images/bg-64c298d66cf6.jpg");}
+body,th,td,input,select,textarea,button{font-size:16px;line-height:24px;} /* 重置页面文字属性 */
+/* 图片等无边框 */
+img{vertical-align:middle;border:0;}
+
+/* 清除列表样式 */
+dl,ul,ol,menu,li{list-style:none}
+
+/* 输入控件字体 */
+input,button,textarea,select,optgroup,option{font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit;}
+
+/* 链接样式 */
+a{text-decoration:none;}
+
+/* 清除特殊标记的字体和字号 */
+address,caption,cite,code,dfn,em,strong,th,var{font-weight: normal; font-style: normal;} /* 重置样式标签的样式 */
+
+
+/* 鼠标样式 */
+input[type="submit"]{cursor: pointer;}
+input::-moz-focus-inner{border: 0; padding: 0;}
+
+/*                    *-------------finish---------------*                     */
+/*--------------------------------公共类样式-----------------------------------*/
+/*                    *--------------start---------------*                     */
+.cp{ cursor:pointer;}
+.fl{ float:left;}
+.fr{ float:right;}
+.oh{overflow:hidden;}
+.cl{clear:both;}
+.fe{ font-family:"Arial, Helvetica, sans-serif";}
+/*                     *-------------finish---------------*                     */
+/*----------------------------------The End-------------------------------------*/
+
+/*                     *-------------World---------------*                      */

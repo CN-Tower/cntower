@@ -1,0 +1,674 @@
+body{
+  width:100%;
+  height:100%;
+}
+#nav{
+  background:transparent !important;
+}
+.loadingText{
+  .loadingGif{
+    .startGif{
+      display:none;
+      width:40px;
+      height:40px;
+      border:3px solid #000;
+      border-radius:50%;
+      font-size: 40px;
+      position:relative;
+      @keyframes translate {
+        0% {
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px); }
+        50% {
+          -webkit-transform: translateY(5px);;
+          transform: translateY(5px); }
+        100% {
+          -webkit-transform: translateY(0px);;
+          transform: translateY(0px);} }
+      i{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        -webkit-animation: translate 1s 0s ease-in-out infinite;
+        animation: translate 1s 0s ease-in-out infinite; }
+    }
+  }
+}
+
+.pageBody{
+  display:none;
+  .container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#c2bfb9;
+    z-index: 0;
+    .clodHorizon{
+      position:fixed;
+      bottom:-5%;
+      width:110%;
+      height:110%;
+      background:url("../img/index/clouds-horizon.png") center center no-repeat;
+      background-size: cover;
+      z-index: 10;
+      transition:transform 0.2s linear;
+    }
+    .clodFar{
+      position:fixed;
+      top:5%;
+      width:110%;
+      height:46%;
+      background:url("../img/index/clouds-far.png") center center no-repeat;
+      background-size: cover;
+      z-index: 11;
+      transition:transform 0.5s linear;
+    }
+    .clodMid{
+      position:fixed;
+      top:-55%;
+      width:110%;
+      height:100%;
+      background:url("../img/index/clouds-mid.png") center center no-repeat;
+      background-size: cover;
+      z-index: 25;
+      transition:transform 0.5s linear;
+    }
+    .clodNear{
+      position:fixed;
+      top:-145%;
+      width:110%;
+      height:150%;
+      background:url("../img/index/clouds-near.png") center center no-repeat;
+      background-size: cover;
+      z-index: 28;
+      transition:transform 0.5s linear;
+    }
+    .mountainNear{
+      position:fixed;
+      bottom:-5%;
+      width:112%;
+      height:100%;
+      z-index: 30;
+      background:url("../img/index/matterhorn.png") center center no-repeat;
+      background-size: cover;
+      transition:transform 0.5s linear;
+    }
+    .mountainFar{
+      position:fixed;
+      bottom:-6%;
+      width:110%;
+      height:70%;
+      z-index: 20;
+      background:url("../img/index/alps.png") center center no-repeat;
+      background-size: cover;
+      transition:transform 0.5s linear;
+    }
+  }
+  .sections{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: transparent;
+    z-index: 40;
+    .sec{
+      transition: transform 0.8s;
+      display: none;
+      position:absolute;
+      width:100%;
+      height:100%;
+      .comment{
+        z-index: 60;
+        position:absolute;
+        width:20%;
+        height:10%;
+        overflow: hidden;
+        a{
+          color:#4f4b4b;
+          text-decoration: underline;
+          h2{
+            font-size: 24px;
+            line-height: 30px;
+          }
+          h3{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+      }
+      .clodA{
+        background: url("../img/index/cloud-1.png") no-repeat 50% 50%;
+        background-size: 100%;
+        position:absolute;
+      }
+      .clodB{
+        background: url("../img/index/cloud-2.png") no-repeat 50% 50%;
+        background-size: 100%;
+        position:absolute;
+      }
+      .clodC{
+        background: url("../img/index/cloud-3.png") no-repeat 50% 50%;
+        background-size: 100%;
+        position:absolute;
+      }
+      .clodD{
+        background: url("../img/index/cloud-4.png") no-repeat 50% 50%;
+        background-size: 100%;
+        position:absolute;
+      }
+      .clodE{
+        background: url("../img/index/cloud-5.png") no-repeat 50% 50%;
+        background-size: 100%;
+        position:absolute;
+      }
+      .clodF{
+        background: url("../img/index/cloud-6.png") no-repeat 50% 50%;
+        background-size: 100%;
+        position:absolute;
+      }
+      .clodG{
+        background: url("../img/index/cloud-7.png") no-repeat 50% 50%;
+        background-size: 100%;
+        position:absolute;
+      }
+      .clodM{
+        z-index: 50;
+        width:62%;
+        height:80%;
+        position:absolute;
+        background-size: 100%;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        margin:auto;
+      }
+      .view{
+        z-index: 49;
+        display: block;
+        width:37%;
+        height:47%;
+        background-size: 100%;
+        position:absolute;
+      }
+    }
+    .sec.sec1 {
+      transform: scale(0.1,0.1) translate(0,0);
+      transform-origin: 50% 23%;
+      .clodM {
+        background: url("../img/index/1-cloud-16-9.png") no-repeat 50% 50%;
+      }
+      .view{
+        background: url("../img/index/views/index.jpg") no-repeat 50% 50%;
+        top:22%;
+        left:32%;
+      }
+      .comment{
+        top:70%;
+        left:64%;
+      }
+      .clodA{
+        top:45%;
+        left:0;
+        width:41%;
+        height:59%;
+        z-index: 53;
+      }
+      .clodB{
+        top: -15%;
+        left: 6%;
+        width: 25%;
+        height: 38%;
+        z-index: 47;
+      }
+      .clodC{
+        top:10%;
+        left:78%;
+        width:14%;
+        height:34%;
+        z-index: 46;
+      }
+      .clodD{
+        top:51%;
+        left:51%;
+        width:37%;
+        height:51%;
+        z-index: 52;
+      }
+      .clodE{
+        display: none;
+        top:10%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodF{
+        display: none;
+        top:10%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodG{
+        display: none;
+        top:10%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+    }
+    .sec.sec2 {
+      transform: scale(0.1,0.1) translate(0,0);
+      transform-origin: 50% 23%;
+      .clodM {
+        background: url("../img/index/2-cloud-16-9.png") no-repeat 50% 50%;
+      }
+      .view{
+        background: url("../img/index/views/about.jpg") no-repeat 50% 50%;
+        top:21%;
+        left:29%;
+      }
+      .comment{
+        top:69%;
+        left:56%;
+      }
+      .clodA{
+        display: none;
+        top:1%;
+        left:10%;
+        width:15%;
+        height:25%;
+        z-index: 47;
+      }
+      .clodB{
+        top:17%;
+        left:11%;
+        width:10%;
+        height:17%;
+        z-index: 47;
+      }
+      .clodC{
+        display:none;
+        top:60%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 46;
+      }
+      .clodD{
+        top:65%;
+        left:10%;
+        width:24%;
+        height:35%;
+        z-index: 48;
+      }
+      .clodE{
+        top:35%;
+        left:69%;
+        width:30%;
+        height:63%;
+        z-index: 52;
+      }
+      .clodF{
+        display:none;
+        top:10%;
+        left:60%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodG{
+        top: -8%;
+        left: 75%;
+        width: 13%;
+        height: 28%;
+        z-index: 52;
+      }
+    }
+    .sec.sec3 {
+      transform: scale(0.1,0.1) translate(0,0);
+      transform-origin: 50% 23%;
+      .clodM {
+        background: url("../img/index/3-cloud-16-9.png") no-repeat 50% 50%;
+      }
+      .view{
+        background: url("../img/index/views/service.jpg") no-repeat 50% 50%;
+        top:22%;
+        left:32%;
+      }
+      .comment{
+        top:70%;
+        left:64%;
+      }
+      .clodA{
+        top: 7%;
+        left: 61%;
+        width: 10%;
+        height: 18%;
+        z-index: 53;
+      }
+      .clodB{
+        top: 43%;
+        left: 74%;
+        width: 23%;
+        height: 36%;
+        z-index: 48;
+      }
+      .clodC{
+        display: none;
+        top:60%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 46;
+      }
+      .clodD{
+        display:none;
+        top:80%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodE{
+        top: 35%;
+        left: 2%;
+        width: 36%;
+        height: 72%;
+        z-index: 52;
+      }
+      .clodF{
+        top: 8%;
+        left: 79%;
+        width: 11%;
+        height: 23%;
+        z-index: 47;
+      }
+      .clodG{
+        top: -17%;
+        left: 25%;
+        width: 21%;
+        height: 44%;
+        z-index: 52;
+      }
+    }
+    .sec.sec4 {
+      transform: scale(0.1,0.1) translate(0,0);
+      transform-origin: 50% 23%;
+      .clodM {
+        height:90% !important;
+        background: url("../img/index/4-cloud-16-9.png") no-repeat 50% 50%;
+      }
+      .view{
+        background: url("../img/index/views/cases.jpg") no-repeat 50% 50%;
+        top: 14%;
+        left: 28%;
+      }
+      .comment{
+        top: 63%;
+        left: 55%;
+      }
+      .clodA{
+        top: 21%;
+        left: 12%;
+        width: 10%;
+        height: 15%;
+        z-index: 53;
+      }
+      .clodB{
+        top: 44%;
+        left: 6%;
+        width: 35%;
+        height: 51%;
+        z-index: 52;
+      }
+      .clodC{
+        display:none;
+        top:60%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 46;
+      }
+      .clodD{
+        display:none;
+        top:80%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodE{
+        display:none;
+        top:10%;
+        left:30%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodF{
+        display:none;
+        top:10%;
+        left:60%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodG{
+        top: 10%;
+        left: 75%;
+        width: 12%;
+        height: 23%;
+        z-index: 47;
+      }
+    }
+    .sec.sec5 {
+      transform: scale(0.1,0.1) translate(0,0);
+      transform-origin: 50% 23%;
+      .clodM {
+        background: url("../img/index/1-cloud-16-9.png") no-repeat 50% 50%;
+      }
+      .view{
+        background: url("../img/index/views/customer.jpg") no-repeat 50% 50%;
+        top:22%;
+        left:32%;
+      }
+      .comment{
+        top:70%;
+        left:64%;
+      }
+      .clodA{
+        top: -6%;
+        left: 19%;
+        width: 20%;
+        height: 31%;
+        z-index: 46;
+      }
+      .clodB{
+        top: 1%;
+        left: 69%;
+        width: 29%;
+        height: 44%;
+        z-index: 48;
+      }
+      .clodC{
+        top: 44%;
+        left: 10%;
+        width: 14%;
+        height: 38%;
+        z-index: 47;
+      }
+      .clodD{
+        display:none;
+        top:80%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodE{
+        top: 55%;
+        left: 74%;
+        width: 22%;
+        height: 45%;
+        z-index: 52;
+      }
+      .clodF{
+        display:none;
+        top:10%;
+        left:60%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodG{
+        display:none;
+        top:10%;
+        left:80%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+    }
+    .sec.sec6 {
+      transform: scale(0.1,0.1) translate(0,0);
+      transform-origin: 50% 23%;
+      .clodM {
+        background: url("../img/index/2-cloud-16-9.png") no-repeat 50% 50%;
+      }
+      .view{
+        background: url("../img/index/views/contact.jpg") no-repeat 50% 50%;
+        top:21%;
+        left:32%;
+      }
+      .comment{
+        top: 68%;
+        left: 60%;
+      }
+      .clodA{
+        display:none;
+        top:10%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 53;
+      }
+      .clodB{
+        top: -3%;
+        left: 0%;
+        width: 41%;
+        height: 68%;
+        z-index: 47;
+      }
+      .clodC{
+        display:none;
+        top:60%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 46;
+      }
+      .clodD{
+        display:none;
+        top:80%;
+        left:10%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodE{
+        display:none;
+        top:10%;
+        left:30%;
+        width:10%;
+        height:10%;
+        z-index: 52;
+      }
+      .clodF{
+        top: 10%;
+        left: 64%;
+        width: 18%;
+        height: 33%;
+        z-index: 48;
+      }
+      .clodG{
+        top: 36%;
+        left: 79%;
+        width: 11%;
+        height: 23%;
+        z-index: 47;
+      }
+    }
+    .sec.end{
+      transform: scale(0.1,0.1) translate(0,0);
+      transform-origin: 50% 23%;
+      display: none;
+      position:absolute;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      color:rgba(75,75,75,0.6);
+      text-align: center;
+      .clod1{
+        position:absolute;
+        top: 18%;
+        left: 43%;
+        width: 22%;
+        height: 32%;
+        z-index: 63;
+        background: url("../img/index/cloud-1.png") no-repeat 50% 50%;
+        background-size: 100%;
+      }
+      .clod2{
+        position:absolute;
+        top: 2%;
+        left: 30%;
+        width: 18%;
+        height: 45%;
+        z-index: 51;
+        background: url("../img/index/cloud-3.png") no-repeat 50% 50%;
+        background-size: 100%;
+      }
+      .clod3{
+        position:absolute;
+        top: 10%;
+        left: 60%;
+        width: 10%;
+        height: 19%;
+        z-index: 49;
+        background: url("../img/index/cloud-5.png") no-repeat 50% 50%;
+        background-size: 100%;
+      }
+      .endTxt{
+        position:absolute;
+        top:34%;
+        left:0;
+        right:0;
+        margin:auto;
+        z-index: 50;
+        h1{
+          font-size: 70px;
+          line-height: 98px;
+          margin-left: 1%;
+        }
+        h3{
+          font-size: 50px;
+          line-height: 58px;
+        }
+      }
+    }
+  }
+}
+
+

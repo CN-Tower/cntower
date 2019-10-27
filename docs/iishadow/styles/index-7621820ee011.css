@@ -1,0 +1,209 @@
+/*                     *-------------Hello---------------*                     */
+
+/*------------------------------con_banner styles------------------------------*/
+/*                    *--------------start---------------*                     */
+#con .couplet{
+    position:fixed;
+    width:1200px;
+    top:28%;
+    left:0;
+    right:0;
+    margin:auto;
+}
+#con .couplet p{
+    font-size: 20px;
+    line-height: 25px;
+    color:#7a0202;
+    position:relative;
+}
+#con .couplet p span{
+    position:absolute;
+}
+#con .banner{
+    padding-top:38px;
+    position:relative;
+}
+#con .banner .banner_bg{
+    position:absolute;
+    width:1080px;
+    top:-10px;
+    left:0;
+    right:0;
+    z-index: -1;
+    margin:auto;
+}
+#con .banner_wp{
+    margin-top:1px;
+}
+#con .banner_window{
+    overflow:hidden;
+    width:1000px;
+    height:500px;
+    position:relative;
+    cursor:pointer;
+    box-shadow: 5px 5px 4px grey;
+}
+#con .banner_sidebar{
+    position:absolute;
+    width:100%;
+    top:188px;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight:900;
+    color:#fff;
+    opacity: 0.7;
+    -moz-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select:none;
+}
+#con .banner_sidebar span:hover{
+    color:#ff7315;
+}
+#con .banner_sidebar span:nth-child(1){
+    margin-left: -55px;
+}
+#con .banner_sidebar span:nth-child(2){
+    margin-right:-55px;
+}
+#con .banner_bar{
+    overflow:hidden;
+    position:absolute;
+    top:445px;
+    left:0;
+    right:0;
+    width:216px;
+    margin:auto;
+    z-index: 10;
+}
+#con .banner_bar li{
+    float:left;
+    width:16px;
+    height:16px;
+    background:#fff;
+    border-radius:50%;
+    margin:10px;
+}
+#con .banner_bar li:hover{
+    background:#ff7315;
+}
+#con .banner_comment{
+    position:absolute;
+    top:380px;
+    left:0;
+    right:0;
+    color:#cdc6be;
+    background:rgba(0,0,0,0.4);
+    font-size: 30px;
+    line-height:50px;
+    text-align: center;
+    z-index: 10;
+    -moz-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select:none;
+}
+#con .banner_comment span{
+    padding-left:50px;
+}
+#con .banner_box{
+    width:8000px;
+    height:500px;
+    margin-left: -1000px;
+}
+#con .banner_box img{
+    float:left;
+    width:1000px;
+    height:500px;
+}
+/*                    *-------------finish---------------*                     */
+/*-------------------------------con_art styles--------------------------------*/
+/*                    *--------------start---------------*                     */
+#con .section{
+    width:100%;
+    height:350px;
+    margin-top: 20px;
+    background:transparent;
+    box-shadow:5px 5px 4px grey;
+    position:relative;
+}
+#con .section_wp{
+    width:100%;
+    height:350px;
+    background:#cdc6be;
+    opacity: 0.5;
+    position:absolute;
+    top:0;
+    z-index:-1;
+}
+#con .section span{
+    width:10%;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 600;
+    color:#7a0202;
+    float:left;
+    margin:100px 0;
+    text-align: center;
+}
+#con .section ul{
+    float:left;
+    margin-top:12px;
+    width:90%;
+}
+#con .section a{
+    -webkit-transition: all 0.5s;
+    display: block;
+    height:100%;
+    width:98%;
+    margin:0 1%;
+    color:grey;
+}
+#con .section a:hover{
+    -webkit-transition: all 0.3s;
+    background:rgba(205,198,190,0.5);
+    margin:-2px auto;
+    box-shadow:3px 3px 2px grey;
+}
+#con .section li{
+    width:33.3%;
+    height:100px;
+    margin:6px 0;
+    float:left;
+}
+#con .section li img{
+    height:100%;
+    float:left;
+    margin-right: 5px;
+}
+#con .section li p{
+    font-size: 16px;
+    line-height: 18px;
+    padding-right:5px;
+}
+/*                    *-------------finish---------------*                     */
+/*-------------------------------footer styles---------------------------------*/
+/*                    *--------------start---------------*                     */
+#footer{
+    height:150px;
+    margin-top:20px;
+    position:relative;
+}
+#footer .footer_bg{
+    height:150px;
+    width:100%;
+    background:#cdc6be;
+    opacity: 0.5;
+    position:absolute;
+    bottom:0;
+    z-index:-1;
+}
+#footer p{
+    text-align: center;
+    color:#7a0202;
+    line-height: 150px;
+}
+/*                    *-------------finish---------------*                     */
+/*----------------------------------The End-------------------------------------*/
+
+/*                     *-------------World---------------*                      */
