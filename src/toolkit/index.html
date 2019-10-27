@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="target-densitydpi=device-dpi" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>Development Tools</title>
+</head>
+<body>
+  <style>
+    #src-table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    #src-table caption {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    #src-table th, #src-table td {
+      border: 1px solid #000;
+      padding: 4px 10px;
+    }
+  </style>
+  <section>
+    <table id="src-table">
+      <caption>开发工具</caption>
+      <tr>
+        <th>文件名称</th>
+        <th>下载文件</th>
+        <th>复制链接</th>
+        <th>更新时间</th>
+        <th>作用描述</th>
+      </tr>
+      <tr>
+        <td>ss.sh</td>
+        <td><a href="files/ss.sh">下载</a></td>
+        <td><a href="javascript:;" onclick="copyLink('ss.sh')">复制</a></td>
+        <td>2018-10-25</td>
+        <td>SS自动搭建脚本</td>
+      </tr>
+      <tr>
+        <td>ssr.sh</td>
+        <td><a href="files/ssr.sh">下载</a></td>
+        <td><a href="javascript:;" onclick="copyLink('ssr.sh')">复制</a></td>
+        <td>2019-22-18</td>
+        <td>SSR自动搭建脚本</td>
+      </tr>
+    </table>
+  </section>
+  <script type="text/javascript" src="./js/funclib.min.js"></script>
+  <script>
+    function copyLink(link) {
+      fn.copyText('http://developtools.net/files/' + link);
+    }
+  </script>
+</body>
+</html>

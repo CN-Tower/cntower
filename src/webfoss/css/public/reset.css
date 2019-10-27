@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   1、基础样式重置
+   ========================================================================== */
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{padding: 0; margin: 0;}
+
+/* 重置页面文字属性 */
+body,th,td,input,select,textarea,button{font-size:16px;line-height:24px;}
+
+/* 输入控件字体 */
+input,button,textarea,select,optgroup,option{font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit;}
+
+/* 清除特殊标记的字体和字号 */
+address,caption,cite,code,dfn,em,strong,th,var{font-weight: normal; font-style: normal;} /* 重置样式标签的样式 */
+
+/* 去除媒体元素留边 */
+audio, canvas, iframe, img, svg, video { vertical-align: middle; }
+
+/* 清除列表样式 */
+dl,ul,ol,menu,li{list-style:none}
+
+/* 初始化文字样式（可酌情修改） */
+body{font-family:"microsoft yahei";}
+
+/* 图片无边框 */
+img{border:0;}
+
+/* 链接样式 */
+a{text-decoration:none;}
+
+/* 鼠标样式 */
+input[type="submit"]{cursor: pointer;}
+input::-moz-focus-inner{border: 0; padding: 0;}
+
+/* 被选字体样式 */
+::-moz-selection { background: #b3d4fc; text-shadow: none; }
+::selection { background: #b3d4fc; text-shadow: none; }
+
+/* 横线样式 */
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+/* 移除文本域默认样式 */
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* 仅充许水平改变文本域大小 */
+textarea { resize: vertical; }
+
+/* ==========================================================================
+   2、自定义类样式（可选择使用！）
+   ========================================================================== */
+/*---------------------------------------------------------------------------*/
+/* 清除浮动:.clear */
+.clear:before,.clear:after { content: " "; /* 1 */ display: table; /* 2 */ }
+.clear:after { clear: both; }
+/*---------------------------------------------------------------------------*/
+/* 手形鼠标:.c_pointer */
+.c_pointer{ cursor:pointer;}
+/*---------------------------------------------------------------------------*/
+/* 左右浮动:.fl、.fr */
+.fl{ float:left;}
+.fr{ float:right;}
+/*---------------------------------------------------------------------------*/
+/* 溢出隐藏:.o_hidden */
+.o_hidden{overflow:hidden;}
+/*---------------------------------------------------------------------------*/
+/* 内容居中:t_center */
+ .t_center{ text-align:center; }
+/*---------------------------------------------------------------------------*/
+/* 轻隐藏:hide */
+.hide { display: none; }
+/*---------------------------------------------------------------------------*/
+/* 英文字体：.en */
+.en{ font-family:"Arial, Helvetica, sans-serif";}
+/*---------------------------------------------------------------------------*/
+/* 强制隐藏:hidden */
+.hidden { display: none !important; }
+/*---------------------------------------------------------------------------*/
+/* 仅内容隐藏:.vhidden */
+.vhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/*---------------------------------------------------------------------------*/
+/* 仅内容隐藏的元素激活或获得焦点时显示内容:.vhidden.act或.vhidden.foc */
+.vhidden.act:active,
+.vhidden.foc:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+/*---------------------------------------------------------------------------*/
+/* 不可见，但在布局流中:.invisible */
+.invisible { visibility: hidden; }
+/*---------------------------------------------------------------------------*/
