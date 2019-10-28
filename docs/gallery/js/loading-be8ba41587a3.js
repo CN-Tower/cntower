@@ -1,1 +1,0 @@
-var imgUrl=["./images/1.jpg","./images/myphoto.jpg","./images/logo.png"],loadingTimer=setInterval(function(){var e=[],a=0;for(var g in imgUrl)e[g]=new Image,e[g].src=imgUrl[g],e[g].height&&a++;a==e.length&&(clearInterval(loadingTimer),$(".pageBody").fadeIn(),$(".loadingBg").fadeOut(),wowLoaded(),indexLoaded())},500);

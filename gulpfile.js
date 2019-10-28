@@ -60,6 +60,17 @@ const excludes = [
 ];
 
 const projectConfig = {
+  'gallery': {
+    isRevJs: true,
+    srcDirs: [
+      '/img'
+    ],
+    srcFiles: [ ],
+    distJsPaths: [
+      './docs/gallery/js/*.js'
+    ],
+    excImages: [ ]
+  },
   'webfoss': {
     isRevJs: true,
     srcDirs: [ ],
@@ -179,9 +190,9 @@ gulp.task('revJs', () => {
           let distJsStr = fn.rd(fd);
           revJsConf.srcDirs.forEach(dir => {
             fn.forIn(revManifest, (revKey, revVal) => {
-              if (revKey.startsWith(dir)) {
-                const fiSrcName = path.parse(revKey).base;
-                const fiDistName = path.parse(revVal).base;
+              if (revKey.startsWith(dir) || revKey.startsWith(dir.replace(/^\//, ''))) {
+                const fiSrcName = '/' + path.parse(revKey).base;
+                const fiDistName = '/' + path.parse(revVal).base;
                 distJsStr = distJsStr.replace(new RegExp(fiSrcName, 'mg'), fiDistName);
               }
             });

@@ -15,7 +15,7 @@ var readyMain = document.getElementById("readyMain");
 
 var mainHeight;/*main的高度*/
 var mainWidth=1366;/*main的宽度*/
-var main = document.getElementById('main-aa931c0e4e11');
+var main = document.getElementById('main-3dfdb0a4f3a0');
 var enemyList = new Array();/*敌人列队*/
 var ballList = new Array();/*龙魔法列队*/
 var bossList = new Array();/*BOSS魔法弹列队*/

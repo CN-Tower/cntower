@@ -1,16 +1,16 @@
 window.onload = function() {
 	var imgUrl = [
-		"./img/1.jpg",
-		"./img/2.jpg",
-		"./img/3.jpg",
-		"./img/4.jpg",
-		"./img/5.jpg",
-		"./img/6.jpg",
-		"./img/7.jpg",
-		"./img/8.jpg",
-		"./img/9.jpg",
-		"./img/10.jpg",
-		"./img/11.jpg"
+		"./img/1-02bcea62f72c.jpg",
+		"./img/2-8ad6f9703910.jpg",
+		"./img/3-5e13d639cbbe.jpg",
+		"./img/4-12fe49d219b8.jpg",
+		"./img/5-d7072902d9a2.jpg",
+		"./img/6-4070975f5b6e.jpg",
+		"./img/7-eacef14eeb8e.jpg",
+		"./img/8-1e73ca806f1e.jpg",
+		"./img/9-406053bdf4fc.jpg",
+		"./img/10-f77327744acf.jpg",
+		"./img/11-ac04d9849631.jpg"
 	];
 	var loadingTimer = setInterval(function(){
 		var neededImg = [], count=0;
