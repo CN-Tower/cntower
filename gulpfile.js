@@ -60,6 +60,17 @@ const excludes = [
 ];
 
 const projectConfig = {
+  'resume': {
+    isRevJs: true,
+    srcDirs: [
+      '/img'
+    ],
+    srcFiles: [ ],
+    distJsPaths: [
+      './docs/resume/js/*.js'
+    ],
+    excImages: [ ]
+  },
   'gallery': {
     isRevJs: true,
     srcDirs: [

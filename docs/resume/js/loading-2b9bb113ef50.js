@@ -3,9 +3,9 @@
  * ===========================================================
  */
 var imgUrl = [
-    "./img/1.jpg",
-    "./img/myphoto.jpg",
-    "./img/logo.png"
+    "./img/1-b55ce5e9e532.jpg",
+    "./img/myphoto-389eab4c6cdf.jpg",
+    "./img/logo-a82a3c23fdc8.png"
 ];
 var loadingTimer = setInterval(function(){
     var neededImg = [], count=0;
