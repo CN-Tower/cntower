@@ -70,11 +70,11 @@ function aboutLoaded(){
 }
 //打开页面监听资源加载
 var imgUrl = [
-    "./img/about/aboutbg01-209145805785.jpg",
-    "./img/about/servicebg02-6b61abeb6f9d.png",
-    "./img/about/aboutimg01-9616aa42e619.png",
-    "./img/about/aboutimg02-04fb2b5e64dd.png",
-    "./img/about/aboutimg03-08389d9c22bd.png"
+    "./img/about/aboutbg01.jpg",
+    "./img/about/servicebg02.png",
+    "./img/about/aboutimg01.png",
+    "./img/about/aboutimg02.png",
+    "./img/about/aboutimg03.png"
 ];
 loadWatcher(imgUrl);
 

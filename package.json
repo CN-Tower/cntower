@@ -1,5 +1,5 @@
 {
-  "name": "cntower.net.cn",
+  "name": "cntower.org.cn",
   "author": "CN-Tower",
   "version": "1.0.0",
   "description": "个人网站，关于个人小作品和个人站点导航！",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/CN-Tower/CN-Tower/issues"
   },
-  "homepage": "https://www.cntower.net.cn",
+  "homepage": "https://www.cntower.org.cn",
   "dependencies": {
     "funclib": "^3.1.9"
   },

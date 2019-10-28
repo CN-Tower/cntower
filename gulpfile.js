@@ -59,18 +59,17 @@ const excludes = [
   '/js/jquery.nav.js',
 ];
 
-const revJsConfig = {
+const projectConfig = {
   'webfoss': {
     isRevJs: true,
-    srcDirs: [
-      'img/',
-    ],
-    srcFiles: [
-      // '2ed.html'
-    ],
+    srcDirs: [ ],
+    srcFiles: [ ],
     distJsPaths: [
       './docs/webfoss/js/*.js'
     ],
+    excImages: [
+      '/img/**',
+    ]
   }
 }
 
@@ -81,13 +80,12 @@ function getTargetProject(proj) {
         project = projects[i];
         projPath = `./src/${project}`;
         projSrc = `${projPath}/**`;
-        excludeSrcs = excludes.map(lib => `${projPath + lib}`);
-        excludeSrcIgs = excludeSrcs.map(src => `!${src}`);
         distRev = `./rev/${project}`;
         distPath = project === 'cntower' ? './docs' : `./docs/${project}`;
-        if (project === 'webfoss') {
-          excludeSrcIgs.concat([ '!/img/cases/**', '!/img/about/**', ]);
-        }
+        const porjConf = projectConfig[project];
+        if (porjConf) porjConf.excImages.forEach(ex => excludes.push(ex));
+        excludeSrcs = excludes.map(lib => `${projPath + lib}`);
+        excludeSrcIgs = excludeSrcs.map(src => `!${src}`);
         return;
       }
     }
@@ -115,7 +113,7 @@ gulp.task('startDist', () => browserSync.init({
 }));
 
 gulp.task('reload', () => {
-  browserSync.reload();
+  return browserSync.reload();
 });
 
 gulp.task('watch', () => gulp.watch(projSrc, () => runSequence('less', 'reload')));
@@ -142,9 +140,9 @@ gulp.task('build', () => {
  */
 gulp.task('clean', () => {
   if (project == 'cntower') {
-    gulp.src(['./docs/cntower', './docs/index.html']).pipe(clean());
+    return gulp.src(['./docs/cntower', './docs/index.html']).pipe(clean());
   } else {
-    gulp.src(distPath).pipe(clean());
+    return gulp.src(distPath).pipe(clean());
   }
 });
 
@@ -172,7 +170,7 @@ gulp.task('revProject', () => {
 });
 
 gulp.task('revJs', () => {
-  const revJsConf = revJsConfig[project] || {};
+  const revJsConf = projectConfig[project] || {};
   const revManifest = require(`./rev/${project}/rev-manifest.json`);
   if (revJsConf.isRevJs) {
     revJsConf.distJsPaths.forEach(distJsPath => {

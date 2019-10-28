@@ -83,14 +83,14 @@ function serviceLoaded(){
 }
 //打开页面监听资源加载
 var imgUrl = [
-    "./img/service/servicebg01-f9789810651a.jpg",
-    "./img/service/servicebg02-6b61abeb6f9d.png",
-    "./img/service/service02-1bb120de8729.png",
-    "./img/service/sevimg03-62d0bcb08301.png",
-    "./img/service/sevimg04-5b181509fffd.png",
-    "./img/service/sevimg05-c6f4970c5e8b.png",
-    "./img/service/sevimg06-66352ff7e661.png",
-    "./img/service/sevimg07-5314ac7b8545.png"
+    "./img/service/servicebg01.jpg",
+    "./img/service/servicebg02.png",
+    "./img/service/service02.png",
+    "./img/service/sevimg03.png",
+    "./img/service/sevimg04.png",
+    "./img/service/sevimg05.png",
+    "./img/service/sevimg06.png",
+    "./img/service/sevimg07.png"
 ];
 loadWatcher(imgUrl);
 

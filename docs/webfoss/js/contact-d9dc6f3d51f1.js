@@ -129,9 +129,9 @@ function contactLoaded(){
 }
 //打开页面监听资源加载
 var imgUrl = [
-    "./img/contact/aa-b3207f2c8306.jpg",
-    "./img/contact/clicktext-74a6525cb06c.png",
-    "./img/contact/shanghai-991139ba8054.jpg"
+    "./img/contact/aa.jpg",
+    "./img/contact/clicktext.png",
+    "./img/contact/shanghai.jpg"
 ];
 loadWatcher(imgUrl);
 

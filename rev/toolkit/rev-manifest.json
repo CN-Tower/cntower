@@ -1,18 +1,5 @@
 {
   "README.md": "README-e99ae7a1f996.md",
   "css/style.css": "css/style-d88b6fc51036.css",
-  "files/certs/funclib/1540069279885.key": "files/certs/funclib/1540069279885-2c714faedcf6.key",
-  "files/certs/funclib/1540069279885.pem": "files/certs/funclib/1540069279885-c0abb1924007.pem",
-  "files/certs/zjson/1539265852182.key": "files/certs/zjson/1539265852182-58ebf45b1b7c.key",
-  "files/certs/zjson/1539265852182.pem": "files/certs/zjson/1539265852182-c335fe5601d9.pem",
-  "files/docker.sh": "files/docker-42d2d4a4f61c.sh",
-  "files/git.sh": "files/git-691b29f5f4c8.sh",
-  "files/nginx.conf": "files/nginx-83e667e082a7.conf",
-  "files/nginx_.conf": "files/nginx_-70518ccc5220.conf",
-  "files/ss.sh": "files/ss-81ca1a5e4a34.sh",
-  "files/ssr.sh": "files/ssr-4be124269d53.sh",
-  "files/v2ray.sh": "files/v2ray-690d64b4b5d9.sh",
-  "files/v2ray_.sh": "files/v2ray_-690d64b4b5d9.sh",
-  "index.html": "index.html",
-  "js/funclib.min.js": "js/funclib.min-23dca054a8db.js"
+  "index.html": "index.html"
 }

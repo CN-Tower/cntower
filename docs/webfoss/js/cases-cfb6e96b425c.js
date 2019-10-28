@@ -131,22 +131,22 @@ function casesLoaded(){
 }
 //打开页面监听资源加载
 var imgUrl = [
-    "./img/customer/casebanner-09c7b6684fd5.jpg",
-    "./img/cases/uploads/bg0-189e682c953d.jpg",
-    "./img/cases/uploads/bg1-3b16da435451.jpg",
-    "./img/cases/uploads/bg2-56c444dcd94e.jpg",
-    "./img/cases/uploads/bg3-b38a8b809c4f.jpg",
-    "./img/cases/uploads/bg4-b4b8bd7e9d81.jpg",
-    "./img/cases/uploads/bg5-c4aefb23cab5.jpg",
-    "./img/cases/uploads/bg6-37b23c3d8808.jpg",
-    "./img/cases/uploads/bg7-3c589e2fe048.jpg",
-    "./img/cases/uploads/bgs0-071f4cdda256.png",
-    "./img/cases/uploads/bgs1-1ad1a1b8ed5f.png",
-    "./img/cases/uploads/bgs2-7f9ebf0a5486.png",
-    "./img/cases/uploads/bgs3-436bdec47074.png",
-    "./img/cases/uploads/bgs4-caf6a12678fa.png",
-    "./img/cases/uploads/bgs5-ebc1266f9c57.png",
-    "./img/cases/uploads/bgs6-708a07b85f4f.png",
-    "./img/cases/uploads/bgs7-bc2855f41ab5.png"
+    "./img/customer/casebanner.jpg",
+    "./img/cases/uploads/bg0.jpg",
+    "./img/cases/uploads/bg1.jpg",
+    "./img/cases/uploads/bg2.jpg",
+    "./img/cases/uploads/bg3.jpg",
+    "./img/cases/uploads/bg4.jpg",
+    "./img/cases/uploads/bg5.jpg",
+    "./img/cases/uploads/bg6.jpg",
+    "./img/cases/uploads/bg7.jpg",
+    "./img/cases/uploads/bgs0.png",
+    "./img/cases/uploads/bgs1.png",
+    "./img/cases/uploads/bgs2.png",
+    "./img/cases/uploads/bgs3.png",
+    "./img/cases/uploads/bgs4.png",
+    "./img/cases/uploads/bgs5.png",
+    "./img/cases/uploads/bgs6.png",
+    "./img/cases/uploads/bgs7.png"
 ];
 loadWatcher(imgUrl);
