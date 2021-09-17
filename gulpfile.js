@@ -12,6 +12,7 @@ const less = require('gulp-less');
 const LessAutoprefix = require('less-plugin-autoprefix');
 const autoprefix = new LessAutoprefix({ browsers: ['last 2 versions'] });
 const execSync = require('child_process').execSync;
+const buildLangArt = require('./scripts/langart.js');
 
 const proj = process.argv[4];
 const isShowLog = process.argv[5];
@@ -113,16 +114,6 @@ function getTargetProject(proj) {
     }
   }
   project = projPath = projSrc = libPath = distPath = '';
-}
-
-function buildLangArt() {
-  if (fs.existsSync('./langart/dist')) {
-    fn.rm('./docs/langart');
-    fn.timeout(500, () => {
-      fn.cp('./langart/dist', './docs/langart', true);
-      fn.log('Build project `Langart` success!', 'Gulp Build');
-    });
-  }
 }
 
 /**
