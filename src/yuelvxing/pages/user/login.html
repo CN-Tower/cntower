@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录 - 悦旅行</title>
+    <meta name="keywords"
+          content="悦旅行，探美食，城里逛，趣城外，周末生活，城市微旅行，美食，城市，城外，明信片，旅行FM，美食的俘虏，美食天下">
+    <meta name="description"
+          content="一群生活家专注提供城市生活方式、周末出行解决方案和休闲度假建议，我们探寻美食，我们在城里逛，我们去城外野，为了一个美好的周末，我们甘做美食的俘虏，寻找最棒的城市观光路线。这里是美食天下，这里有精彩的生活指南，精心打造的旅行FM。你还可以和达人们互寄明信片。">
+    <meta name="author" content="悦旅行">
+    <meta name="application-name" content="悦旅行 | yuelvxing.com">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../img/yueicon144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../img/yueicon114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../img/yueicon72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="../../img/yueicon57x57.png">
+    <link rel="shortcut icon" href="../../img/favicon.png">
+    <link rel="stylesheet" href="../../css/user.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../../components/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../../components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../js/base.js?_v=1471481979451"></script>
+    <script data-main="../js/user/login.js?_v=1471481979451"
+            src="../../components/requirejs/require.js?_v=1471481979451"></script>
+</head>
+<body style="background-image: url('../../img/bg4.jpg')">
+<div class="container">
+    <div class="content">
+        <div class="ctbox clearfix">
+            <div class="logo">
+                <a href="" title="前往悦旅行首页"><img src="../../img/logo.png" alt="悦旅行"></a>
+                <p><img src="../../img/slogen.png" alt="享生活，乐于行"/></p>
+            </div>
+            <div class="loginbox">
+                <div id="login-form">
+                    <fieldset>
+                        <legend>登录<span class="otherway">没有帐号？ <a href="register.html" class="text-warning"></a></span></legend>
+                        <input id="email" name="email" value="" type="email" placeholder="邮箱" tabindex="1"
+                               data-valid="email">
+                        <span id="mail-error" class="text-error" style="display:none"></span>
+                        <input id="password" name="password" value="" type="password" placeholder="密码" tabindex="2"
+                               data-valid="password">
+                        <span id="password-error" class="text-error" style="display:none"></span>
+                        <div class="clearfix">
+                            <label class="checkbox pull-left">
+                                <input name="remember" type="checkbox"> 记住密码&nbsp;&nbsp;&nbsp;&nbsp;
+                            </label>
+                            <!-- <a href="#" class="text-warning  pull-left" title="忘记密码？">忘记密码？</a> -->
+                            <input name="to" type="hidden" value="">
+                            <span class="btn btn-primary pull-right" tabindex="3">登录</span>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="openid text-center">
+                    <p class="muted">使用合作帐号快速登录</p>
+                    <div class="opennav">
+                        <a id="sina-login" href="javascript:;"><i class="openid openid-sina"></i> 新浪微博</a>
+                        <a id="qq-login" href="javascript:;"><i class="openid openid-qq"></i> QQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
