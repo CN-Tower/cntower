@@ -115,6 +115,16 @@ function getTargetProject(proj) {
   project = projPath = projSrc = libPath = distPath = '';
 }
 
+function buildLangArt() {
+  if (fs.existsSync('./langart/dist')) {
+    fn.rm('./docs/langart');
+    fn.timeout(500, () => {
+      fn.cp('./langart/dist', './docs/langart', true);
+      fn.log('Build project `Langart` success!', 'Gulp Build');
+    });
+  }
+}
+
 /**
  * gulp run
  * ===================================================
@@ -142,6 +152,9 @@ gulp.task('watch', () => gulp.watch(projSrc, () => runSequence('less', 'reload')
 
 // gulp build
 gulp.task('build', () => {
+  if (proj === 'langart') {
+    return buildLangArt();
+  }
   if (proj !== 'all') {    
     getTargetProject(proj);
     if (project) {
