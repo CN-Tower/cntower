@@ -1,0 +1,6 @@
+[submodule "submodules/devdocs"]
+	path = submodules/devdocs
+	url = git@github.com:CN-Tower/devdocs.git
+[submodule "submodules/langart"]
+	path = submodules/langart
+	url = git@github.com:CN-Tower/langart.git
