@@ -4,11 +4,11 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const rootPath = path.resolve(__dirname, '../');
-const srcPath = path.join(rootPath, 'langart/dist');
+const srcPath = path.join(rootPath, 'submodules/langart/dist');
 const distPath = path.join(rootPath, 'docs/langart');
 
 module.exports = function buildLangArt() {
-  execSync(`git pull --reb`, { cwd: path.join(rootPath, 'langart') });
+  execSync(`git pull --reb`, { cwd: path.join(rootPath, 'submodules/langart') });
   if (fs.existsSync(srcPath)) {
     fn.rm(distPath);
     fn.timeout(500, () => {
