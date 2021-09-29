@@ -34,13 +34,13 @@ inquirer.prompt([{
         fn.rm(distPath);
         fn.timeout(500, () => {
           fn.cp(srcDist, distPath, true);
-          fn.timeout(() => {
+          fn.timeout(500, () => {
             if (isView) {
               execSync(`${npm} run gulp:preview -- ${project}`, { cwd: rootPath, stdio: 'inherit' });
             } else {
               fn.log(`Build project "${project}" success!`, 'Build');
             }
-          }, 500);
+          });
         });
       }
     }
